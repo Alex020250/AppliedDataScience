@@ -18,7 +18,7 @@
     - Hot climate (Average temperature: more than 21.5 ℃)
 
 ## Goal
-- Investigate, whether/how the climate factor the taste of the wine
+- Investigate, whether/how the climate factor influences the taste of the wine
 
 ## Selection of data set
 - Combination of two data coming from different data sources.
