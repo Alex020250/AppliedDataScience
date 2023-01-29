@@ -1,0 +1,60 @@
+# Process suggestions
+
+## Necessary preparation steps:
+- Managing data type
+    - Year: Decimal -> Integer
+    - Price: Nominal -> Decimal
+- Value check (part of data exploration)
+    - designation:
+        - Consistent form of values are required. Currently too many values are included due to spelling variations.
+            - ex) Zwischen den Seen Trockenbeerenauslese Nummer 7
+            - ex) Zwischen den Seen Nr. 7 Trockenbeerenauslese
+        - Too many unidentifiable values
+            - ex) "P"
+            - ex) "S"
+    - Producer
+        - Some unidentifiable values
+            - ex) 0
+            - ex) next:
+    - vineyard_grape
+        - Consistent form of values are required. Currently too many values are included due to spelling variations.
+            - ex) Pinot Noir
+            - ex) "P" Pinot Noir
+            - ex) 'S' Pinot Noir
+        - All values that are included only once (Absolute count = 1) can be grouped into large classes.
+            - ex) Big Barrel Pinot Noir -> Pinot Noir
+            - ex) Big Bat Carbernet Sauvignon -> Carbernet Sauvignon
+    - Year
+        - There are 14961 rows that do not contain specific year. (Year = 0)
+        - How can we handle with such rows?
+            - Exclude all rows that do not have year data?
+- Manaing "desc" column
+    - Categorizing of "desc" column into different levels (Reference: https://winefolly.com/deep-dive/wine-tasting-terms-to-use/#finish)
+        - The Fruit Level (1)
+        - The Sweetness Level (2)
+        - The Body Profile (3)
+        - The Finish (4)
+        - Should be discussed (?)
+    - "desc" column can be splitted into different levels above and plugged in the binary value (0,1)
+    - Taste description:
+        - fruit (1)
+        - acidity (1)
+        - ripe (1)
+        - rich (3)
+        - cherry (1)
+        - tannins (3)
+        - full (?)
+        - black (?)
+        - spice (4)
+        - sweet (2)
+        - aromas (4)
+        - oak (4)
+        - blend (?)
+        - red (?)
+        - dark (?) -> color of wine? Or dark-cherry?
+        - bodied (3)
+        - bright (?)
+        - white (?)
+        - dry (2)
+        - plum (1)
+    - It would be nice, if we add some descriptive words like "soft", "smooth", "light", "bold" (Reference: https://www.vivino.com/DE/en/montes-montes-alpha-cabernet-sauvignon/w/71294?ref=nav-search)
