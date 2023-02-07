@@ -7,3 +7,6 @@ Repository for exchange of files for course applied data science
     - Repository Git Hub (Alex)
     - Wetter API (Lukas)
     - Stichpunkte Scope (Ji Soo)
+
+
+Link to presentation: https://1drv.ms/p/s!Avu-jc7n10xO0UcBrOzGOWEH244t?e=neZVrq

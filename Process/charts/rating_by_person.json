@@ -16,7 +16,7 @@
   },
   "titleConfiguration" : {
     "enabled" : true,
-    "title" : "ExampleSet",
+    "title" : "Discretize",
     "subTitle" : null,
     "titleStyle" : {
       "color" : null,
@@ -92,42 +92,36 @@
     }
   },
   "plotConfigurations" : [ {
-    "columns" : [ "temp" ],
-    "plotType" : "map_point",
+    "columns" : [ "points" ],
+    "plotType" : "column",
     "stackingType" : "NONE",
     "additionalColumns" : {
-      "name" : null,
-      "map_lat_column" : "lat",
-      "color" : "temp_cat",
-      "size" : null,
-      "map_lon_column" : "lon"
+      "color_group" : "taster_twitter_handle"
     },
     "aggregationConfiguration" : {
       "enabled" : true,
-      "groupByColumns" : [ "temp" ],
+      "groupByColumns" : [ "points" ],
       "aggregationFunction" : "COUNT",
       "aggregationParameter" : null,
       "sortingDirection" : "DESCENDING",
-      "sortingSource" : "NONE"
+      "sortingSource" : "VALUE_COLUMN"
     },
     "typeSpecificConfiguration" : {
-      "configuration" : {
-        "background_labels" : true
-      }
+      "configuration" : { }
     },
     "styleConfiguration" : {
       "visible" : true,
       "markersEnabled" : false,
       "showInLegend" : true,
       "interactive" : true,
-      "colors" : [ "rgba(43,144,143,1.0)", "rgba(244,91,91,1.0)", "rgba(145,232,225,1.0)", "rgba(228,211,84,1.0)", "rgba(241,92,128,1.0)", "rgba(124,181,236,1.0)", "rgba(247,163,92,1.0)", "rgba(67,67,72,1.0)", "rgba(144,237,125,1.0)", "rgba(128,133,233,1.0)", "rgba(0,0,0,1.0)" ],
+      "colors" : null,
       "missingColor" : null,
       "lineWidth" : 2.0,
       "areaFillOpacity" : 0.7,
       "markerSize" : 4.0,
       "markerFillOpacity" : 0.5,
       "lineType" : "SOLID",
-      "markerShape" : "DIAMOND",
+      "markerShape" : "CIRCLE",
       "dataLabelConfiguration" : {
         "enabled" : false,
         "format" : null,
@@ -162,7 +156,7 @@
     "yaxisId" : "y1"
   } ],
   "mapConfiguration" : {
-    "mapKey" : "custom/world-continents",
+    "mapKey" : "custom/world",
     "navigationAllowed" : true,
     "borderWidth" : 1.0
   },
