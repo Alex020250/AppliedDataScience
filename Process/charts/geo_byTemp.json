@@ -16,7 +16,7 @@
   },
   "titleConfiguration" : {
     "enabled" : true,
-    "title" : "ExampleSet",
+    "title" : "Geopositions by Temperature",
     "subTitle" : null,
     "titleStyle" : {
       "color" : null,
@@ -108,6 +108,16 @@
       "sortingDirection" : "DESCENDING",
       "sortingSource" : "NONE"
     },
+    "tooltipConfiguration" : {
+      "valuePrefix" : null,
+      "valueSuffix" : null,
+      "valueDecimals" : null
+    },
+    "typeSpecificConfiguration" : {
+      "configuration" : {
+        "background_labels" : false
+      }
+    },
     "styleConfiguration" : {
       "visible" : true,
       "markersEnabled" : false,
@@ -136,8 +146,8 @@
           "anchorPoint" : null,
           "rotation" : null,
           "overlapAllowed" : false,
-          "xoffset" : 0,
-          "yoffset" : 0
+          "yoffset" : 0,
+          "xoffset" : 0
         },
         "filter" : {
           "enabled" : false,
@@ -146,16 +156,6 @@
           "filterValue" : null
         }
       }
-    },
-    "typeSpecificConfiguration" : {
-      "configuration" : {
-        "background_labels" : false
-      }
-    },
-    "tooltipConfiguration" : {
-      "valuePrefix" : null,
-      "valueSuffix" : null,
-      "valueDecimals" : null
     },
     "yaxisId" : "y1"
   } ],
