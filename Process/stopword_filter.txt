@@ -1,7 +1,0 @@
-wine
-flavors
-finish
-palate
-Drink
-Cabernet
-notes
