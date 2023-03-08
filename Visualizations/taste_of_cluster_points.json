@@ -92,7 +92,7 @@
     }
   },
   "plotConfigurations" : [ {
-    "columns" : [ "tannins", "acidity", "apple", "aromas", "berry", "black", "black_cherry", "blackberry", "cherry", "chocolate", "citrus", "crisp", "currant", "dark", "firm", "fresh", "fruits", "green", "lemon", "peach", "pear", "pepper", "plum", "structure", "wood" ],
+    "columns" : [ "tannins", "acidity", "apple", "aromas", "berry", "black", "black_cherry", "blackberry", "cherry", "chocolate", "citrus", "crisp", "currant", "dark", "firm", "fresh", "fruits", "green", "lemon", "peach", "pear", "pepper", "plum", "structure" ],
     "plotType" : "column",
     "stackingType" : "NONE",
     "additionalColumns" : {
@@ -113,6 +113,12 @@
       "valuePrefix" : null,
       "valueSuffix" : null,
       "valueDecimals" : null
+    },
+    "typeSpecificConfiguration" : {
+      "configuration" : {
+        "regression_interpolation" : "-",
+        "jitter_amount" : 0
+      }
     },
     "styleConfiguration" : {
       "visible" : true,
@@ -152,12 +158,6 @@
           "filterValue" : null
         }
       }
-    },
-    "typeSpecificConfiguration" : {
-      "configuration" : {
-        "regression_interpolation" : "-",
-        "jitter_amount" : 0
-      }
     }
   }, {
     "columns" : [ "points" ],
@@ -179,6 +179,9 @@
       "valuePrefix" : null,
       "valueSuffix" : null,
       "valueDecimals" : null
+    },
+    "typeSpecificConfiguration" : {
+      "configuration" : { }
     },
     "styleConfiguration" : {
       "visible" : true,
@@ -218,9 +221,6 @@
           "filterValue" : null
         }
       }
-    },
-    "typeSpecificConfiguration" : {
-      "configuration" : { }
     }
   } ],
   "mapConfiguration" : {

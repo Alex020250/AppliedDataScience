@@ -92,7 +92,7 @@
     }
   },
   "plotConfigurations" : [ {
-    "columns" : [ "average(acidity)", "average(apple)", "average(aromas)", "average(berry)", "average(black)", "average(black_cherry)", "average(blackberry)", "average(cherry)", "average(chocolate)", "average(citrus)", "average(crisp)", "average(currant)", "average(dark)", "average(firm)", "average(fresh)", "average(fruits)", "average(green)", "average(lemon)", "average(peach)", "average(pear)", "average(pepper)", "average(plum)", "average(structure)", "average(tannins)", "average(wood)" ],
+    "columns" : [ "average(acidity)", "average(apple)", "average(aromas)", "average(berry)", "average(black)", "average(black_cherry)", "average(blackberry)", "average(cherry)", "average(chocolate)", "average(citrus)", "average(crisp)", "average(currant)", "average(dark)", "average(firm)", "average(fresh)", "average(fruits)", "average(green)", "average(lemon)", "average(peach)", "average(pear)", "average(pepper)", "average(plum)", "average(structure)", "average(tannins)" ],
     "plotType" : "column",
     "stackingType" : "NONE",
     "additionalColumns" : {
@@ -112,6 +112,12 @@
       "valuePrefix" : null,
       "valueSuffix" : null,
       "valueDecimals" : null
+    },
+    "typeSpecificConfiguration" : {
+      "configuration" : {
+        "regression_interpolation" : "-",
+        "jitter_amount" : 0
+      }
     },
     "styleConfiguration" : {
       "visible" : true,
@@ -150,12 +156,6 @@
           "filterProperty" : "y",
           "filterValue" : null
         }
-      }
-    },
-    "typeSpecificConfiguration" : {
-      "configuration" : {
-        "regression_interpolation" : "-",
-        "jitter_amount" : 0
       }
     }
   } ],
